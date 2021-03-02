@@ -17,10 +17,6 @@ class App extends React.Component {
         this.setState({ videos: response.data.items, selectedVideo: response.data.items[0] });
     };
 
-    componentDidMount() {
-        this.onTermSubmit('buildings');
-    }
-
     onVideoSelect = (video) => {
         this.setState({ selectedVideo: video });
     }
